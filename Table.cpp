@@ -347,6 +347,8 @@ void Table::destroy()
 		delete this->valuesOfTable[i];
 
 	this->valuesOfTable.resize(0);
+	this->numOfColumns = 0;
+	this->numOfRows = 0;
 }
 
 void Table::createTableCell(unsigned row, unsigned column, std::string& buffer)
